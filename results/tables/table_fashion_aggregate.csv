@@ -1,0 +1,2 @@
+dataset,budget_summary,briga_accuracy,myopic_accuracy,paired_gain_pp,paired_se_pp,n_seeds
+Fashion-MNIST,"mean over k={2,4,8,12,16}",0.5607,0.5257,3.5,0.37,5

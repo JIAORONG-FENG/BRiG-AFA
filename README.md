@@ -9,9 +9,6 @@ BRiG-AFA learns budget-specific candidate risk-to-go functions by fitted Bellman
 ```text
 briga/              Core models, training, evaluation, and data loaders
 scripts/            Reproduction and figure-generation entry points
-results/*.csv       Seed-level and summarized results used by the paper
-results/tables/     Compact publication tables
-results/figures/    Publication figures in PDF and PNG formats
 paper/              Overleaf-compatible LaTeX source and compiled manuscript
 ```
 
@@ -63,25 +60,11 @@ python scripts/run_miniboone_tabular.py \
 
 MiniBooNE is downloaded from the UCI Machine Learning Repository. Set `BRIGA_DATA_CACHE` to override the default `~/.cache/briga_afa` location.
 
-### Regenerating publication figures
-
-```bash
-python scripts/make_publication_figures_route_a.py
-```
-
-The script reads the committed compact CSV files and writes figures to `results/publication_route_a/`. The committed final figures are also available under `results/figures/`.
 
 ## Main empirical result
 
 On Fashion-MNIST with 20 candidate pixels, BRiG-AFA improves test accuracy over the matched one-step Myopic-Q ablation by `10.20 ± 0.74` percentage points at budget 4 over five paired seeds. See the manuscript for the complete experimental scope and limitations.
 
-## Paper
-
-The Overleaf-compatible source is in [`paper/main.tex`](paper/main.tex), with a compiled copy at [`paper/main.pdf`](paper/main.pdf).
-
-## Citation
-
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff).
 
 ## License
 

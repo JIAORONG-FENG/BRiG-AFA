@@ -55,5 +55,5 @@ python scripts/run_miniboone_tabular.py \
 
 MiniBooNE is downloaded from the UCI Machine Learning Repository. Set `BRIGA_DATA_CACHE` to override the default `~/.cache/briga_afa` location.
 
-##License
+## License
 This project is released under the MIT License. See the LICENSE file for details.

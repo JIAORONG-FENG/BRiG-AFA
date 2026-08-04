@@ -8,11 +8,8 @@ BRiG-AFA learns budget-specific candidate risk-to-go functions by fitted Bellman
 
 ```text
 briga/              Core models, training, evaluation, and data loaders
-scripts/            Reproduction and figure-generation entry points
 paper/              Overleaf-compatible LaTeX source and compiled manuscript
 ```
-
-Model checkpoints, downloaded datasets, caches, training logs, and large diagnostic trajectory files are intentionally excluded.
 
 ## Installation
 
@@ -24,8 +21,6 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -e .
 ```
-
-PyTorch installation can be adjusted for the local CUDA version by following the official PyTorch installation instructions.
 
 ## Reproducing the experiments
 
@@ -60,12 +55,3 @@ python scripts/run_miniboone_tabular.py \
 
 MiniBooNE is downloaded from the UCI Machine Learning Repository. Set `BRIGA_DATA_CACHE` to override the default `~/.cache/briga_afa` location.
 
-
-## Main empirical result
-
-On Fashion-MNIST with 20 candidate pixels, BRiG-AFA improves test accuracy over the matched one-step Myopic-Q ablation by `10.20 ± 0.74` percentage points at budget 4 over five paired seeds. See the manuscript for the complete experimental scope and limitations.
-
-
-## License
-
-No open-source license has been selected yet. Add an appropriate license before distributing or accepting external contributions.
